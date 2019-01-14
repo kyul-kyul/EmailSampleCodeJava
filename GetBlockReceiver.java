@@ -8,12 +8,11 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class GetBlockReceiver {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         GetBlockReceiver sas =new GetBlockReceiver();
         sas.callGetBlockReceiversApi();
     }
-    public void callGetBlockReceiversApi() throws IOException {
-        System.out.println("GetMail Test");
+    public void callGetBlockReceiversApi()  {
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/block-receivers"; // {appKey} 변경 필요
         String query = "?mailAddress=hankyul.lee@nhnent.com";
         String result = this.getResultString(query, url);

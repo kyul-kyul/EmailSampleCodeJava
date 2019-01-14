@@ -14,7 +14,7 @@ import java.nio.file.Files;
 
 public class RegisterTag {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) {
         RegisterTag sas = new RegisterTag();
         sas.callRegisterTagApi();
     }

@@ -15,13 +15,13 @@ import java.nio.file.Files;
 
 public class DeleteBlockReceiver {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) {
         DeleteBlockReceiver sas = new DeleteBlockReceiver();
         sas.callDeleteBlockReceiverApi();
     }
 
-    public void callDeleteBlockReceiverApi() throws IOException{
-        System.out.println("EmailApiSample Test");
+    public void callDeleteBlockReceiverApi() {
+
 
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/block-receivers"; // {appKey} 변경 필요
         Map<String, Object> data = new HashMap<String, Object>();

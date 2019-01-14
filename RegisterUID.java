@@ -14,13 +14,12 @@ import java.nio.file.Files;
 
 public class RegisterUID {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) {
         RegisterUID sas = new RegisterUID();
         sas.callRegisterUIDApi();
     }
 
-    public void callRegisterUIDApi() throws IOException{
-        System.out.println("EmailApiSample Test");
+    public void callRegisterUIDApi() {
 
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/uids"; // {appKey} 변경 필요
         Map<String, Object> data = new HashMap<String, Object>();

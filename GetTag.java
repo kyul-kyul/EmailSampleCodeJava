@@ -8,7 +8,7 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class GetTag {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         GetTag sas =new GetTag();
         sas.callGetTagApi();
     }

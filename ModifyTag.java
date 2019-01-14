@@ -15,13 +15,13 @@ import java.nio.file.Files;
 
 public class ModifyTag {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) {
         ModifyTag sas = new ModifyTag();
         sas.callModifyTagApi();
     }
 
-    public void callModifyTagApi() throws IOException{
-        System.out.println("EmailApiSample Test");
+    public void callModifyTagApi() {
+
 
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/tags/yn8SqBgZ"; // {appKey} {tagId} 변경 필요
         Map<String, Object> data = new HashMap<String, Object>();

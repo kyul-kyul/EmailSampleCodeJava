@@ -8,7 +8,7 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class TagMailRequestDetail {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         TagMailRequestDetail sas =new TagMailRequestDetail();
         sas.callTagMailRequestDetailApi();
     }

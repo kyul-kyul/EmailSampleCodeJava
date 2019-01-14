@@ -14,13 +14,13 @@ import java.nio.file.Files;
 
 public class RegisterMailAddress {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) {
         RegisterMailAddress sas = new RegisterMailAddress();
         sas.callRegisterMailAddressApi();
     }
 
     public void callRegisterMailAddressApi() {
-        System.out.println("EmailApiSample Test");
+
 
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/uids/2/email-addresses"; // {appKey} 변경 필요
         Map<String, Object> data = new HashMap<String, Object>();

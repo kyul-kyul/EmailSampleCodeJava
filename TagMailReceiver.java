@@ -8,7 +8,7 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class TagMailReceiver {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         TagMailReceiver sas =new TagMailReceiver();
         sas.callTagMailReceiverApi();
     }

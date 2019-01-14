@@ -8,12 +8,11 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class GetOneUID {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         GetOneUID sas =new GetOneUID();
         sas.callGetOneUIDApi();
     }
-    public void callGetOneUIDApi() throws IOException {
-        System.out.println("GetMail Test");
+    public void callGetOneUIDApi()  {
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/uids/2"; // {appKey} 변경 필요
         String query = "";
         String result = this.getResultString(query, url);

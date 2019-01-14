@@ -8,12 +8,11 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class GetTemplateDetail {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         GetTemplateDetail sas =new GetTemplateDetail();
         sas.callGetTemplatDetaileApi();
     }
     public void callGetTemplatDetaileApi() {
-        System.out.println("GetMailDetail Test");
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/templates"; // {appKey} 변경 필요
         String query = "/hankyul";
         String result = this.getResultString(query, url);

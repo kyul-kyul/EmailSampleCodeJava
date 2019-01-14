@@ -8,12 +8,11 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class DeleteTag {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         DeleteTag sas =new DeleteTag();
         sas.callDeleteTagApi();
     }
     public void callDeleteTagApi()  {
-        System.out.println("GetMail Test");
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}"; // {appKey} 변경 필요
         String query = "/tags/yn8SqBgZ";
         String result = this.getResultString(query, url);

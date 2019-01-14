@@ -8,11 +8,11 @@ import java.net.URLConnection;
 import java.net.HttpURLConnection;
 
 public class GetMail {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         GetMail sas =new GetMail();
         sas.callGetEmailApi();
     }
-    public void callGetEmailApi() throws IOException {
+    public void callGetEmailApi()  {
         String url = "https://api-mail.cloud.toast.com/email/v1.4/appKeys/{APPKEY}/sender/mails"; // {appKey} 변경 필요
         String query = "?startSendDate=2018-03-01+00:00:00&endSendDate=2018-12-27+00:00:00&pageSize=10&requestId=2018122017440079090020";
         String result = this.getResultString(query, url);
